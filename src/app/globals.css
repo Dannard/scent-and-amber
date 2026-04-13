@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+:root {
+  --font-sans: "Avenir Next", "Neue Haas Grotesk Text Pro", "Segoe UI", sans-serif;
+  --font-display: "Iowan Old Style", "Canela", "Baskerville", serif;
+
+  --brand-night: #0f0f12;
+  --brand-ink: #1a1715;
+  --brand-panel: #17161b;
+  --brand-cream: #f4efe8;
+  --brand-muted: #b8afa3;
+  --brand-border: #2f2b33;
+  --brand-gold: #d2b07b;
+  --brand-gold-strong: #e1be87;
+  --brand-bg-glow-a: rgba(210, 176, 123, 0.12);
+  --brand-bg-glow-b: rgba(72, 56, 35, 0.16);
+}
+
+html[data-theme="light"] {
+  --brand-night: #f4f0e8;
+  --brand-ink: #231f1a;
+  --brand-panel: #ece6dd;
+  --brand-cream: #1f1b18;
+  --brand-muted: #6a6258;
+  --brand-border: #d5c9b9;
+  --brand-gold: #b58d53;
+  --brand-gold-strong: #c39b62;
+  --brand-bg-glow-a: rgba(181, 141, 83, 0.14);
+  --brand-bg-glow-b: rgba(123, 101, 72, 0.12);
+}
+
+@theme inline {
+  --font-sans: var(--font-sans);
+  --font-display: var(--font-display);
+
+  --color-brand-night: var(--brand-night);
+  --color-brand-ink: var(--brand-ink);
+  --color-brand-panel: var(--brand-panel);
+  --color-brand-cream: var(--brand-cream);
+  --color-brand-muted: var(--brand-muted);
+  --color-brand-border: var(--brand-border);
+  --color-brand-gold: var(--brand-gold);
+  --color-brand-gold-strong: var(--brand-gold-strong);
+}
+
+* {
+  border-color: var(--brand-border);
+}
+
+body {
+  font-family: var(--font-sans), sans-serif;
+  background:
+    radial-gradient(1200px 500px at 85% -10%, var(--brand-bg-glow-a), transparent 60%),
+    radial-gradient(900px 400px at 10% 0%, var(--brand-bg-glow-b), transparent 60%),
+    var(--brand-night);
+}
+
+.font-display {
+  font-family: var(--font-display), serif;
+  letter-spacing: 0.01em;
+}
