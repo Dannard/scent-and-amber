@@ -4,6 +4,11 @@ Scent and Amber is a premium fragrance e-commerce concept website designed to sh
 
 The project focuses on making scent products feel desirable while keeping information clear and easy to evaluate, especially on mobile.
 
+## Live Links
+
+- Live Site: [https://scent-and-amber.vercel.app](https://scent-and-amber.vercel.app)
+- Repository: [https://github.com/Dannard/scent-and-amber](https://github.com/Dannard/scent-and-amber)
+
 ## What This Project Demonstrates
 
 - Premium visual direction (dark-first with optional light mode)
